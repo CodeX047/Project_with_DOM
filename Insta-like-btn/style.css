@@ -43,44 +43,27 @@ h1 {
 }
 
 .box {
-  background-color: #b2aeae;
-  color: #dadaad;
-  text-align: center;
-  height: 430px;
+  height: 400px;
   width: 300px;
-  box-shadow: 0 0 15px black;
-  border-radius: 12px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 .box img {
-  width: 200px;
-  margin: 10px 0 ;
-  background-color: #e5ab34;
-  border-radius: 50%;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
-  box-shadow: 0 0 5px white;
-  object-position: center;
 }
 
-.box h1 {
-  font-size: 24px;
-  margin: 10px 0;
-  letter-spacing: 3px;
-}
-
-.box h3 {
-  font-size: 17px;
-  color: #ff0000;
-  margin: 12px 0;
-  letter-spacing: 2px;
-  font-weight: 700;
-}
-
-.box #add {
-  margin: 0 5px;
-  padding: 3px 8px;
-  background-color: #12ff11;
-  border: none;
-  border-radius: 9px;
-  font-weight: 700;
+#heart {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition:  transform 500ms ease-in-out;
 }
